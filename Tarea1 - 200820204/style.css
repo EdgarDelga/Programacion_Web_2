@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(39, 39, 85);
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+strong{
+    color: yellow;
+}
+
+h1, h2, h3, p, button{
+    margin-right: 100rem;
+    opacity: 0;
+    animation: animacion 1s ease-in-out forwards;
+}
+
+@keyframes animacion {
+    0%{
+        margin-right: 100rem;
+    }
+    100%{
+        margin-right: 0rem;
+        opacity: 1;
+    }
+}
+
+.boton{
+    background-color: rgb(37, 37, 105);
+    color: aliceblue;
+    width: 17rem;
+    height: 10rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 2px black;
+}
+
+.boton:hover{
+    background-color: rgb(73, 73, 155);
+    cursor: pointer;
+}
+
+.boton:active{
+    background-color: rgb(14, 14, 61);
+}
