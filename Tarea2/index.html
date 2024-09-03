@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clase 29/08/2024</title>
+</head>
+<body>
+    <div>
+
+        <div class="nav">
+            <h1>Adivina el número</h1>
+            <h2>(Se generará un número aleatorio, tendrás que adivinarlo, si no, perderás vidas).</h2>
+        </div>
+        <div class="cont">
+            <form onsubmit="adivinar(event)" class="form">
+            <label id="vidas"></label>
+            <input type="text" placeholder="Ingresa tu número." id="valorUsuario">
+            <button type="submit">Adivinar</button>
+            </form>
+        </div>
+        <div class="end">
+            <h1 id="resultado"></h1>
+        </div>
+
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
